@@ -1,10 +1,10 @@
 import androidx.compose.runtime.remember
 import androidx.compose.ui.window.ComposeUIViewController
-import database.getPeopleDatabase
+import database.getDreamDatabase
 
 fun MainViewController() = ComposeUIViewController {
     val dao = remember {
-        getPeopleDatabase().peopleDao()
+        getDreamDatabase().dreamDao()
     }
     App(dao)
 }

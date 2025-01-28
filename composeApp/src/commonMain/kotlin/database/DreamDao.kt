@@ -7,15 +7,15 @@ import androidx.room.Upsert
 import kotlinx.coroutines.flow.Flow
 
 @Dao
-interface PeopleDao {
+interface DreamDao {
 
     @Upsert
-    suspend fun upsert(person: Person)
+    suspend fun upsert(dream: Dream)
 
     @Delete
-    suspend fun delete(person: Person)
+    suspend fun delete(dream: Dream)
 
-    @Query("SELECT * FROM person")
-    fun getAllPeople(): Flow<List<Person>>
+    @Query("SELECT * FROM dream")
+    fun getAllDreams(): Flow<List<Dream>>
 
 }

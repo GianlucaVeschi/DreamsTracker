@@ -3,11 +3,11 @@ package com.plcoding.room_cmp.database
 import android.content.Context
 import androidx.room.Room
 import androidx.sqlite.driver.bundled.BundledSQLiteDriver
-import database.PeopleDatabase
+import database.DreamDatabase
 
-fun getPeopleDatabase(context: Context): PeopleDatabase {
-    val dbFile = context.getDatabasePath("people.db")
-    return Room.databaseBuilder<PeopleDatabase>(
+fun getDreamDatabase(context: Context): DreamDatabase {
+    val dbFile = context.getDatabasePath("dream.db")
+    return Room.databaseBuilder<DreamDatabase>(
         context = context.applicationContext,
         name = dbFile.absolutePath
     )
