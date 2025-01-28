@@ -1,4 +1,4 @@
-rootProject.name = "Room-CMP"
+rootProject.name = "DreamsTracker"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
